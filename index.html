@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="pruductCode">Product Code</label>
+                        <input type="text" name="pruductCode" id="pruductCode">
+                    </div>
+                    <div>
+                        <label for="pruduct">Produc Name</label>
+                        <input type="text" name="pruduct" id="pruduct">
+                    </div>
+                    <div>
+                        <label for="qty">QTY</label>
+                        <input type="number" name="qty" id="qty">
+                    </div>
+                    <div>
+                        <label for="perprice">Price</label>
+                        <input type="number" name="perprice" id="perprice">
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                    
+
+                </form>
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Product Code</th>
+                                <th>Produc Name</th>
+                                <th>QTY</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+   
+</body>
+</html>
